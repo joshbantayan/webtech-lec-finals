@@ -7,12 +7,37 @@
     line-height: 900px;
     
 }
+#login {
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: rgba(108, 91, 123, 0.6);
+    opacity: 1;
+    width: 30%;
+    height: 50%;
+    left: 35%;
+    top: 15%;
+    position: absolute;
+    text-align: center;
+    padding-top: 15%;
+}
+
+#login input{
+    width: 50%;
+    font-size: 20px;
+}
+
+#home {
+    width: 7%;
+    cursor: pointer;
+}
+
 .navbar {
     display: inline-block;
     float: right;
     padding-right: 30px;
     padding-top: 10px;
-    background-color: #6C5B7B;
+    background-color: #F8B195;
+    padding-bottom: 7px;
     height: 60px;
     position: fixed;
     top: 0;
@@ -39,9 +64,9 @@
 
 .button{
     border-radius: 15px;
-    border: 2px solid #F67280;
+    border: 2px solid #6C5B7B;
     background: none;
-    color: #F67280;
+    color: #6C5B7B;
     font-size: 25px;
     cursor: pointer;
 }
