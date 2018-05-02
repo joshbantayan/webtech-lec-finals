@@ -5,7 +5,7 @@
     <head>
         <Title>Webtech Finals</Title>
         <link rel="icon" type="image/png" href="Images/Icon2.png" style="width: 200px">
-        <link rel="stylesheet" href="Css/main.css">
+        <link rel="stylesheet" href="../css/main.css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
@@ -13,7 +13,7 @@
     <body>
         
         <div class="navbar">
-            <a href="index.html"><img src="Images/logo.2.png" id="home"></a>
+            <a href="index.html"><img src="../Images/logo.2.png" id="home"></a>
         </div>
         
         <div id="login">
