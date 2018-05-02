@@ -21,14 +21,46 @@
             <form action="pages/signup.php" method="get">
                 <input type="submit" value="Hi">
             </form>
+            <form action="pages/login.php" method="get">
+                <input type="submit" value="Hello">
+            </form>
             <form  class="nav-login">
-                <div class="nav-login-input">
-                    <input type="text" name="uid" placeholder="Username">
-                    <input type="password" name="pwd" placeholder="Password">
-                </div>
                 <div class="nav-login-btn">
-                    <button class="button">Login</button>
-                    <button button type="button" class="button" data-toggle="modal" data-target="#myModal">Sign Up</button>
+                    <button type="button" class="button" data-toggle="modal" data-target="#myModal1">Login</button>
+                    
+                    <div class="modal fade" id="myModal1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+      
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Login</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+        
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                 <form action="signup.php" method="post">
+                                    <p>Username</p>
+                                    <input type="text" name="username" placeholder="Username"><br>
+                                    <p>Password</p>
+                                    <input type="password" name="password" placeholder="Password"><br>
+                                </form>
+                            </div>
+        
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                <input type="submit" class="btn btn-danger"value="Sign Up">
+                            </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <button type="button" class="button" data-toggle="modal" data-target="#myModal">Sign Up</button>
                     
                     <div class="modal fade" id="myModal">
                         <div class="modal-dialog">
@@ -42,7 +74,7 @@
         
                             <!-- Modal body -->
                             <div class="modal-body">
-                                 <form action="signup.php" method="post">
+                                 <form action="pages/signup.php" method="post">
                                     <p>First Name:</p>
                                     <input type="text" name="firstName" placeholder="First Name"><br>
                                     <p>Last Name:</p>

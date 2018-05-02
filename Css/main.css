@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 #welcome p {
     font-size: 10vh;
     font-family: "Montserrat";
@@ -32,6 +33,13 @@
     cursor: pointer;
 }
 
+#logo{
+    display: block;
+    position: absolute;
+    left: 25%;
+    top: 15%;
+}
+
 .navbar {
     display: inline-block;
     float: right;
@@ -41,7 +49,6 @@
     padding-bottom: 7vh;
     height: 60vh;
     padding: 0.4vh;
-    background-color: #6C5B7B;
     height: 6.8vh;
     position: fixed;
     top: 0;
@@ -92,6 +99,7 @@
 }
 */
 
+<<<<<<< HEAD
 #logo{
     display: block;
     position: absolute;
@@ -100,12 +108,19 @@
 }
 
 
+=======
+>>>>>>> 1cc36891db201fd02807909e12e8b5601e02bce8
 .button{
     border-radius: 3vh;
     border: 0.5vh solid #FFFFFF;
     background: none;
+<<<<<<< HEAD
     color: #FFFFFF;
     font-size: 2vh;
+=======
+    color: white;
+    font-size: 25px;
+>>>>>>> 1cc36891db201fd02807909e12e8b5601e02bce8
     cursor: pointer;
 }
 
