@@ -103,7 +103,6 @@
 }
 */
 
-<<<<<<< HEAD
 #logo{
     display: block;
     position: absolute;
@@ -111,20 +110,14 @@
     top: 15vh;
 }
 
-
-=======
->>>>>>> 1cc36891db201fd02807909e12e8b5601e02bce8
 .button{
     border-radius: 3vh;
     border: 0.5vh solid #FFFFFF;
     background: none;
-<<<<<<< HEAD
     color: #FFFFFF;
     font-size: 2vh;
-=======
     color: white;
     font-size: 25px;
->>>>>>> 1cc36891db201fd02807909e12e8b5601e02bce8
     cursor: pointer;
 }
 
