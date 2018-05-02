@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 #welcome p {
-    font-size: 80px;
+    font-size: 10vh;
     font-family: "Montserrat";
     color: #F76280;
     text-align: center;
-    line-height: 900px;
+    line-height: 150vh;
     
 }
 
 #login {
-    border: 2px solid white;
-    border-radius: 15px;
+    border: 1vh solid white;
+    border-radius: 5vh;
     background-color: rgba(108, 91, 123, 0.6);
     opacity: 1;
     width: 30%;
@@ -24,12 +24,12 @@
 }
 
 #login input{
-    width: 50%;
-    font-size: 20px;
+    width: 20vh;
+    font-size: 3vh;
 }
 
 #home {
-    width: 7%;
+    width: 5vh;
     cursor: pointer;
 }
 
@@ -47,11 +47,11 @@
 .navbar {
     display: inline-block;
     float: right;
-    padding-right: 30px;
-    padding-top: 10px;
+    padding-right: 15vh;
+    padding-top: 10vh;
     background-color: #F8B195;
-    padding-bottom: 7px;
-    height: 60px;
+    padding-bottom: 7vh;
+    height: 60vh;
     padding: 0.4vh;
     height: 6.8vh;
     position: fixed;
@@ -103,20 +103,36 @@
 }
 */
 
+<<<<<<< HEAD
+#logo{
+    display: block;
+    position: absolute;
+    left: 55vh;
+    top: 15vh;
+}
+
+
+=======
+>>>>>>> 1cc36891db201fd02807909e12e8b5601e02bce8
 .button{
-    border-radius: 15px;
-    border: 2px solid #6C5B7B;
+    border-radius: 3vh;
+    border: 0.5vh solid #FFFFFF;
     background: none;
+<<<<<<< HEAD
+    color: #FFFFFF;
+    font-size: 2vh;
+=======
     color: white;
     font-size: 25px;
+>>>>>>> 1cc36891db201fd02807909e12e8b5601e02bce8
     cursor: pointer;
 }
 
 .button:hover{
-    border-radius: 15px;
-    border: 2px solid #C03C84;
+    border-radius: 3vh;
+    border: 0.5vh solid #C03C84;
     background: none;
-    font-size: 25px;
+    font-size: 3vh;
     color: #C03C84;
     transition-duration: 0.3s;
 }
