@@ -17,8 +17,10 @@
     </head>
     
     <body>
-        
         <div class="navbar">
+            <form action="pages/signup.php" method="get">
+                <input type="submit" value="Hi">
+            </form>
             <form  class="nav-login">
                 <div class="nav-login-input">
                     <input type="text" name="uid" placeholder="Username">
@@ -40,8 +42,20 @@
         
                             <!-- Modal body -->
                             <div class="modal-body">
-                                <form>
-                                    
+                                 <form action="signup.php" method="post">
+                                    <p>First Name:</p>
+                                    <input type="text" name="firstName" placeholder="First Name"><br>
+                                    <p>Last Name:</p>
+                                    <input type="text" name="lastName" placeholder="Last Name"><br>
+                                    <p>E-mail Address:</p>
+                                    <input type="email" name="email" placeholder="E-mail Address"><br>
+                                    <p>Username: </p>
+                                    <input type="text" name="username" placeholder="Username"><br>
+                                    <p>Password: </p>
+                                    <input type="password" name="password" placeholder="Password"><br>
+                                    <p>Verify Password: </p>
+                                    <input type="password" name="vPassword" placeholder="Verify Password"><br>
+                                    <input type="submit" value="Sign Up">
                                 </form>
                             </div>
         
@@ -63,7 +77,7 @@
             <p>Web Systems and Technologies</p>
         </div>
         
-        
     </body>
     
 </html>
+

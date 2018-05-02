@@ -25,5 +25,8 @@
             </form>
         </div>
     </body>
-    
 </html>
+
+    <?php
+        require "../php/connect.php";
+    ?>
