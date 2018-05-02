@@ -7,6 +7,7 @@
     line-height: 900px;
     
 }
+
 #login {
     border: 2px solid white;
     border-radius: 15px;
@@ -39,6 +40,9 @@
     background-color: #F8B195;
     padding-bottom: 7px;
     height: 60px;
+    padding: 0.4vh;
+    background-color: #6C5B7B;
+    height: 6.8vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -46,6 +50,39 @@
     
 }
 
+.navbar .nav-login{
+    float: right;
+    display: inline-block;
+    padding-right: 3vh;
+}
+
+.nav-login-input{
+    float: left;
+    padding:  2.1vh 1vh;
+    
+}
+
+.nav-login-input input{
+    height: 2.5vh;
+    width: 18vh;
+}
+
+.nav-login-btn{
+    float: right;
+    display: inline-block;
+}
+
+.nav-login-btn button{
+    margin: 1vh;
+    
+    height: 5vh;
+    width: 12vh;
+    
+    font-size: 2.5vh;
+}
+
+
+/*
 .navbar form{
     float: right;
     display: inline-block;
@@ -53,6 +90,7 @@
     padding-top: 10px;
     
 }
+*/
 
 #logo{
     display: block;
@@ -86,4 +124,6 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
+    
+    margin: 0;
 }

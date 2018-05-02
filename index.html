@@ -6,19 +6,56 @@
         <Title>Webtech Finals</Title>
         <link rel="icon" type="image/png" href="Images/Icon2.png" style="width: 200px">
         <link rel="stylesheet" href="Css/main.css">
+        <script rel="text/javascript" src="script/signup.js"></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     </head>
     
     <body>
         
         <div class="navbar">
-                <form action="login.html" method="get">
-                <button class="button">Login</button>
-                </form>
-                <form action="signup.html" method="get">
-                <button class="button">Sign Up</button>
-                </form>
+            <form  class="nav-login">
+                <div class="nav-login-input">
+                    <input type="text" name="uid" placeholder="Username">
+                    <input type="password" name="pwd" placeholder="Password">
+                </div>
+                <div class="nav-login-btn">
+                    <button class="button">Login</button>
+                    <button button type="button" class="button" data-toggle="modal" data-target="#myModal">Sign Up</button>
+                    
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+      
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Sign Up!</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+        
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <form>
+                                    
+                                </form>
+                            </div>
+        
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </form>
         </div>
         
         <div id="welcome">
