@@ -40,6 +40,10 @@
     top: 15%;
 }
 
+#signup {
+    align-content: center;
+}
+
 .navbar {
     display: inline-block;
     float: right;
