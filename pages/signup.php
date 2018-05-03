@@ -30,30 +30,3 @@
     </div>    
     </body>
 </html>
-
-  <?php
-        require "../php/connect.php";
-        $fName = "";
-        $LName = "";
-        $email = "";
-        $username = "";
-        $password = "";
-        $vPassword = "";
-
-        if(isset($_POST['firstName']) && isset($_POST['lastName']) && isset($_POST['email']) && isset($_POST['username']) && isset($_POST['password']) && isset($_POST['vPassword'])){
-            $fName = $_POST['firstName'];
-            $lName = $_POST['lastName'];
-            $email = $_POST['email'];
-            $username = $_POST['username'];
-            $password = $_POST['password'];
-            $password = sha1($password);
-            $vPassword = $_POST['vPassword'];
-            
-            $statment = $connection->prepare("INSERT INTO user(firstname, lastname,email,username,password) VALUES(?,?,?,?,?)");
-            $statment->bind_param("sssss", $fName,$lName,$email,$username,$password);
-
-            if(!$statment->execute()){
-                     echo $statment->error;   
-                    }
-        }
-    ?>

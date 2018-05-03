@@ -74,7 +74,7 @@
         
                             <!-- Modal body -->
                             <div class="modal-body">
-                                 <form action="pages/signup.php" method="post">
+                                 <form action="php/signup.php" method="POST">
                                     <p>First Name:</p>
                                     <input type="text" name="firstName" placeholder="First Name"><br>
                                     <p>Last Name:</p>
