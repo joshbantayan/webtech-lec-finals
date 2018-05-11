@@ -1,10 +1,14 @@
 <script>
-    function userFound(){
-        alert("User found!");
+    function invalidPassword(){
+        alert("Invalid Password!");
     }
-    
-    function userMissing(){
-        alert("User Awan!");
+
+    function invalidUser(){
+        alert("Invalid User!");
+    }
+
+    function success(){
+        window.location.href = "http://lecture/pages/welcome.php"
     }
 </script>
 
@@ -15,18 +19,24 @@
     if(isset($_POST['username']) && isset($_POST['password'])){
         $username = mysqli_real_escape_string($connection, $_POST['username']);
         $password = mysqli_real_escape_string($connection, $_POST['password']);
-        $qry = "SELECT username FROM users WHERE username = '$username' ";
+        $qry = "SELECT username,password FROM users WHERE username = '$username'";
         $results = mysqli_query($connection, $qry);
         $row = mysqli_fetch_array($results, MYSQLI_ASSOC); 
         $count = mysqli_num_rows($results);
+        $passwordVerify = $row['password'];
         
         if($count == 1){
-            echo "<script>userFound()</script>";
-        }else{
-            echo "<script>userMissing()</script>";
+                if(password_verify($password, $passwordVerify)){
+                $_SESSION['user'] = $username;
+                echo "<script>success()</script>";
+                }else{
+                echo "<script>invalidPassword()</script>";
+                }
+            }else{
+                echo "<script>invalidUser()</script>";
+            }
         }
 
-    }
 ?>
 <!-- 
  <?php

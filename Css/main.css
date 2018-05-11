@@ -65,7 +65,7 @@
     display: block;
     margin: auto;
     width: 350px;
-    height: 50%;
+    height: 60%;
     padding-right: 5vh;
 }
 
@@ -77,7 +77,7 @@
 #login {
     margin: auto;
     width: 30%;
-    padding: 5vh 10vh;
+    padding: 7vh 10vh;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
