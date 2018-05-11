@@ -9,7 +9,7 @@
     function successfull()
     {
         alert("Registration Success!");
-        window.location.href = "http://lecture/";
+        window.location.href = "http://lecture/pages/login.php";
     }
 </script>
 <?php
