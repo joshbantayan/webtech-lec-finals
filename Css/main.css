@@ -1,141 +1,120 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-#welcome p {
-    font-size: 10vh;
-    font-family: "Montserrat";
-    color: #F76280;
-    text-align: center;
-    line-height: 150vh;
-    
+.navigation-bar {
+    background-color: rgba(248, 177, 149, 0.4);
+    padding: 2vh;
+    display: inline-block;
+    padding-top: 2vh;
+    width: 100%;
+}
+
+.navigation-bar input {
+    float: right;
+    margin-right: 2vh;
+}
+
+.button {
+    border: 2px solid white;
+    border-radius: 4vh;
+    background-color: transparent;
+    color: white;
+    transition: transform 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.button:focus {
+    outline: 0;
+}
+
+.button2 {
+    border: 2px solid rgba(248, 177, 149);
+    border-radius: 4vh;
+    background-color: transparent;
+    color: rgba(248, 177, 149);
+    transition: transform 0.3s;
+    font-size: 20px;
+}
+
+.button2:hover {
+    transform: scale(1.1);
+}
+
+.button2:focus {
+    outline: 0;
+}
+
+#container{
+    position: absolute;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+#content {
+    display: table-cell;
+    vertical-align: middle;
+    margin: auto;
+    text-align: center;   
+}
+
+#content img {
+    display: block;
+    margin: auto;
+    width: 350px;
+    height: 50%;
+    padding-right: 5vh;
+}
+
+#content input {
+    width: 35vh;
+    padding-left: 1vh;
 }
 
 #login {
-    border: 1vh solid white;
-    border-radius: 5vh;
-    background-color: rgba(108, 91, 123, 0.6);
-    opacity: 1;
+    margin: auto;
     width: 30%;
-    height: 50%;
-    left: 35%;
-    top: 15%;
-    position: absolute;
-    text-align: center;
-    padding-top: 15%;
-}
-
-#login input{
-    width: 20vh;
-    font-size: 3vh;
-}
-
-#home {
-    width: 5vh;
-    cursor: pointer;
-}
-
-#logo{
-    display: block;
-    position: absolute;
-    left: 25%;
-    top: 15%;
+    padding: 10vh;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 #signup {
-    align-content: center;
+    margin: auto;
+    width: 25%;
+    padding: 10vh;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
-.navbar {
-    display: inline-block;
-    float: right;
-    padding-right: 15vh;
-    padding-top: 10vh;
-    background-color: #F8B195;
-    padding-bottom: 7vh;
-    height: 60vh;
-    padding: 0.4vh;
-    height: 6.8vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    
+#signup input {
+    border-radius: 3vh;
+    margin-bottom: 3vh;
+    padding-left: 2vh;
+    font-size: 4vh;
 }
 
-.navbar .nav-login{
-    float: right;
-    display: inline-block;
-    padding-right: 3vh;
+#signup input:focus {
+    outline: 0;
 }
 
-.nav-login-input{
-    float: left;
-    padding:  2.1vh 1vh;
-    
+.main-page-content p {
+    color: #F8B195;
+    font-size: 12vh;
+    font-family: "Montserrat";
+    text-align: center;   
 }
 
-.nav-login-input input{
-    height: 2.5vh;
-    width: 18vh;
-}
-
-.nav-login-btn{
-    float: right;
-    display: inline-block;
-}
-
-.nav-login-btn button{
-    margin: 1vh;
-    
-    height: 5vh;
-    width: 12vh;
-    
-    font-size: 2.5vh;
-}
-
-
-/*
-.navbar form{
-    float: right;
-    display: inline-block;
-    padding-right: 30px;
-    padding-top: 10px;
-    
-}
-*/
-
-#logo{
+.main-page-content img {
     display: block;
-    position: absolute;
-    left: 55vh;
-    top: 15vh;
+    margin: auto;
 }
 
-.button{
-    border-radius: 3vh;
-    border: 0.5vh solid #FFFFFF;
-    background: none;
-    color: #FFFFFF;
-    font-size: 2vh;
-    color: white;
-    font-size: 25px;
-    cursor: pointer;
-}
-
-.button:hover{
-    border-radius: 3vh;
-    border: 0.5vh solid #C03C84;
-    background: none;
-    font-size: 3vh;
-    color: #C03C84;
-    transition-duration: 0.3s;
-}
-
-body{
-    overflow: hidden;
+body {
+    background-attachment: fixed;
     background-image: url(../Images/BG3.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: 100%;
-    
     margin: 0;
+    overflow: hidden;
 }
