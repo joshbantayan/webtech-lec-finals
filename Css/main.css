@@ -10,7 +10,7 @@
 
 .navigation-bar input {
     float: right;
-    margin-right: 2vh;
+    margin-right: 3vh;
 }
 
 .button {
@@ -34,6 +34,7 @@
     border-radius: 4vh;
     background-color: transparent;
     color: rgba(248, 177, 149);
+    padding: 0.5vh 2vh;
     transition: transform 0.3s;
     font-size: 20px;
 }
@@ -76,9 +77,21 @@
 #login {
     margin: auto;
     width: 30%;
-    padding: 10vh;
+    padding: 5vh 10vh;
     background-color: rgba(0, 0, 0, 0.7);
 }
+
+#login input {
+    border-radius: 3vh;
+    margin-bottom: 3vh;
+    padding-left: 2vh;
+    font-size: 4vh;
+}
+
+#login input:focus {
+    outline: 0;
+}
+
 
 #signup {
     margin: auto;

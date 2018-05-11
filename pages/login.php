@@ -1,9 +1,34 @@
+<script>
+    function userFound(){
+        alert("User found!");
+    }
+    
+    function userMissing(){
+        alert("User Awan!");
+    }
+</script>
+
 <?php
     session_start();
     require "../php/connect.php";
+
+    if(isset($_POST['username']) && isset($_POST['password'])){
+        $username = mysqli_real_escape_string($connection, $_POST['username']);
+        $password = mysqli_real_escape_string($connection, $_POST['password']);
+        $qry = "SELECT username FROM users WHERE username = '$username' ";
+        $results = mysqli_query($connection, $qry);
+        $row = mysqli_fetch_array($results, MYSQLI_ASSOC); 
+        $count = mysqli_num_rows($results);
+        
+        if($count == 1){
+            echo "<script>userFound()</script>";
+        }else{
+            echo "<script>userMissing()</script>";
+        }
+
+    }
 ?>
-
-
+<!-- 
  <?php
     if(isset($_POST['username']) && isset($_POST['password']) && isset($_POST['loginB'])){
     $username = $_POST['username'];
@@ -28,7 +53,8 @@
 
     }
 
-?>
+?> -->
+
 
 <!DOCTYPE HTML>
 <html>
@@ -42,17 +68,17 @@
     <body>
         
         <div class="navigation-bar">
-           <a href="../index.php"><input type="button" class="button" value="Return"></a>
+           <a href="../index.php"><input type="button" class="button2" value="Return"></a>
         </div>
         <div id = "container">
-            <div id="login-content">
-                <form role ="form" method="post">
+            <div id="content">
+                <form method="post">
                     <div id="login">
                     <img src="../Images/logo.2.png"><br>
                     <input type="text" name="username" placeholder="Username"> <br><br>
                     <input type="password" name="password" placeholder="Password">
                     <br><br>
-                    <button value="login" class="button-login">LOGIN</button>
+                    <button value="login" class="button2">LOGIN</button>
                     </div>
                 </form>
             </div>
