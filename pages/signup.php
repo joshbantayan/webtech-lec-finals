@@ -2,13 +2,14 @@
 <script>
     function invalidPassword()
     {
-    alert("Invalid Password");    
+        alert("Invalid Password");
+        window.location.href = "http://lecture/pages/signup.php";
     }
     
     function successfull()
     {
         alert("Registration Success!");
-        window.location.href = "http://lecture/";
+        window.location.href = "http://lecture/pages/login.php";
     }
 </script>
 <?php
@@ -27,9 +28,9 @@
         if($verifyPassword != $password){
             echo "<script>invalidPassword()</script>";
         }else{
-        
-        $sql = $connection->prepare("INSERT INTO users (firstname, lastname,email,username,password, registrationdate) VALUES(?,?,?,?,?,NOW())");
-        $sql->bind_param("sssss", $fName, $lName, $email, $username, $password);
+            $password = password_hash($password, PASSWORD_DEFAULT);
+            $sql = $connection->prepare("INSERT INTO users (firstname, lastname,email,username,password, registrationdate) VALUES(?,?,?,?,?,NOW())");
+            $sql->bind_param("sssss", $fName, $lName, $email, $username, $password);
         
             if(!$sql->execute()){
                 echo $sql->error;
@@ -56,13 +57,13 @@
     <body>
             <div id="container">
                 <div id="content">    
-                    <form action="signup.php" method="post">
+                    <form method="post">
                         <div id="signup">
-                            <input type="text" name="firstName" placeholder="First Name"><br>        
+                            <input type="text" name="firstName" placeholder="First Name"><br>     
                             <input type="text" name="lastName" placeholder="Last Name"><br>    
                             <input type="email" name="email" placeholder="E-mail Address"><br>
                             <input type="text" name="username" placeholder="Username"><br>
-                            <input type="password" name="password" placeholder="Password"><br>            
+                            <input type="password" name="password" placeholder="Password"><br>     
                             <input type="password" name="vPassword" placeholder="Verify Password"><br><br>
                             <input type="submit" class="button2" value="Sign Up">
                         </div>

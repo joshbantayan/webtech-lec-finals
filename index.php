@@ -17,7 +17,7 @@
     
     <body>
         <div class="navigation-bar">
-            <a href="pages/signup.php"><input type="button" class="button" value="Register"></a>
+            <a href="pages/signup.php"><input type="button" class="button" value="Sign Up"></a>
             <a href="pages/login.php"><input type="button" class="button" value="Login"></a>
         </div>
                     
