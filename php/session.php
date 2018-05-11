@@ -1,5 +1,5 @@
 <?php
-    require "connect.php";
+    require "../php/connect.php";
     session_start();
 
     $checkUser =$_SESSION['user'];
