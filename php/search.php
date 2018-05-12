@@ -1,5 +1,6 @@
 <?php
     require "connect.php";
+    require "";
 
     $output = '';
 
@@ -21,10 +22,6 @@
             echo "<div id='content-container'>";
             echo "<a href=$link><h4>$title</h4></a>";
             echo "<p>$content</p>";
-
         }
-
-        
-
     }
 ?>
