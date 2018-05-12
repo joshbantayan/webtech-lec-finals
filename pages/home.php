@@ -37,18 +37,21 @@
                 </div>
             </nav>
         </div>
-         <div class="home-container">
+         <div class="occupy">
             <div class="occupy-home">
-            <div class="side_nav"> 
-                <div class="link"><a href="jsp.php">JSP and Java Servlets</a></div>
-                <div class="link"><a href="ss-scripting.php">Server Side Scripting</a></div>
-                <div class="link"><a href="#">Link 1</a></div>
-                <div class="link"><a href="web-security.php">Web Security</a></div>
+                <div class="side_nav"> 
+                    <div class="link"><a href="jsp.php">JSP and Java Servlets</a></div>
+                    <div class="link"><a href="ss-scripting.php">Server Side Scripting</a></div>
+                    <div class="link"><a href="#">Link 1</a></div>
+                    <div class="link"><a href="web-security.php">Web Security</a></div>
+                </div>
+            </div>
+   
+            <img src="../Images/logo.2.png">
+            <div id = "description">
+                Web Technology is the study of how computers communicate. It covers the differrent languages involved in making creaive, dynamic and secure websites.
             </div>
         </div>
-   
-        <img src="../Images/logo.2.png" id="home-logo" />
-    </div>
         
     </body>
 </html>
