@@ -147,6 +147,7 @@ body {
 }
 
 .occupy{
+    z-index: 5;
     height: 100%;
     width: 100%;
     position: fixed;
@@ -154,7 +155,7 @@ body {
 }
 
 .side_nav{
-    background: #F8B195;
+    background: rgb(248, 177, 149);
     width: 2vh;
     height: 100%;
     overflow: hidden;
@@ -262,4 +263,17 @@ body {
     margin: 10px;
     border-radius: 10px;
     background-color: #fa9d78;
+}
+/* Home page*/
+.home-container{
+
+}
+
+.occupy-home {
+           background-attachment: fixed;
+    background-image: url(../Images/BG3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0;
+    overflow: hidden;
 }

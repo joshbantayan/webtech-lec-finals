@@ -15,15 +15,6 @@
     </head>
     <body>
 
-<!--
-        <div class="navigation-bar">
-            <a href="home.php"><img href="../Images/Icon2.png"></a>
-            <form action="search.php">
-                <input type="text" placeholder="Search..">
-                <button value="search" class="button2">SEARCH</button>
-            </form>
-        </div>
--->
         <div class="wrapper">
             <nav class="navbar navbar-expand-lg navigation-bar">
                 <button type="button" class="btn btn-demo" data-toggle="modal" data-target="#myModal2">
@@ -46,16 +37,18 @@
                 </div>
             </nav>
         </div>
-        
-      
-        
-        <div class="container">
-            <div class="content">
-                <div class="container_title">
-                    <h2>node.js</h2>
-                </div>
-                <div class="container_content"></div>
+         <div class="home-container">
+            <div class="occupy-home">
+            <div class="side_nav"> 
+                <div class="link"><a href="jsp.php">JSP and Java Servlets</a></div>
+                <div class="link"><a href="ss-scripting.php">Server Side Scripting</a></div>
+                <div class="link"><a href="#">Link 1</a></div>
+                <div class="link"><a href="web-security.php">Web Security</a></div>
             </div>
         </div>
+   
+        <img src="../Images/logo.2.png" id="home-logo" />
+    </div>
+        
     </body>
 </html>
