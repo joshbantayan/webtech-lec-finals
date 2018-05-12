@@ -57,24 +57,22 @@
 				</div>
 
 				<div class="modal-body">
-					<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-					</p>
 				</div>
 
 			</div><!-- modal-content -->
 		</div><!-- modal-dialog -->
 	</div><!-- modal -->
-        
-        <div class="container">
-            <div class="content">
-                <div class="container_title">
-                    <h2>About Us</h2>
+        <div class="about-container">
+                <div class="about-title-container">
+                    <h2>ABOUT US</h2>
+                    <div id="about-border"></div>
+                    <p> About the website and the team</p>
                 </div>
-                <div class="container_content">
+                <div class="about-content">
                     
                         <div class="member-container">
                             <div class="member-img">
-                                <img src="" alt="" />
+                                <img src="../Images/joshua.png" alt="" class="mem-photo" />
                             </div>
                             <div class="member-desc">
                                 <h2> Joshua John Bantayan</h2>
@@ -83,7 +81,7 @@
                     
                     <div class="member-container">
                             <div class="member-img">
-                                <img src="" alt="" />
+                                <img src="" alt="" class="mem-photo" />
                             </div>
                             <div class="member-desc">
                                 <h2> Eden Carlo Brabante</h2>
@@ -92,7 +90,7 @@
                     
                     <div class="member-container">
                             <div class="member-img">
-                                <img src="" alt="" />
+                                <img src="../Images/noriel.png" alt="" class="mem-photo" />
                             </div>
                             <div class="member-desc">
                                 <h2> Noriel Jon Navarro </h2>
@@ -101,7 +99,7 @@
                     
                     <div class="member-container">
                             <div class="member-img">
-                                <img src="" alt="" />
+                                <img src="../Images/nikki.jpg" alt="" class="mem-photo" />
                             </div>
                             <div class="member-desc">
                                 <h2> Jisselle Nicole Marinas </h2>
@@ -110,7 +108,7 @@
                     
                     <div class="member-container">
                             <div class="member-img">
-                                <img src="" alt="" />
+                                <img src="../Images/keilly.jpg" alt="" class="mem-photo" />
                             </div>
                             <div class="member-desc">
                                 <h2> Keilly Ruth Panis</h2>
@@ -119,14 +117,13 @@
                     
                     <div class="member-container">
                             <div class="member-img">
-                                <img src="" alt="" />
+                                <img src="../Images/chasey.jpg" alt="" class="mem-photo" />
                             </div>
                             <div class="member-desc">
                                 <h2> Chaserylle Know-Well Sison</h2>
                             </div>
                         </div>
                 </div>
-            </div>
         </div>
     </body>
 </html>

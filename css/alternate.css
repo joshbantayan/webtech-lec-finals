@@ -1,0 +1,18 @@
+.navigation-bar {
+    background-color: rgba(248, 177, 149, 0.4);
+    display: inline-block;
+    width: 100%;
+}
+
+.navigation-bar p {
+	margin-right: 8vh;
+	padding: 1vh 3vh;
+	text-decoration: underline;
+	float: right;
+    color: purple;
+    cursor: pointer;
+}
+
+body {
+	margin: 0;
+}

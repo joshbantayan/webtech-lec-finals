@@ -1,19 +1,19 @@
 
 <script>
-    function invalidPassword()
+    function passwordValidatef()
     {
-        alert("Invalid Password");
+        alert("Password does not match");
         window.location.href = "http://lecture/pages/signup.php";
     }
     
     function successfull()
     {
         alert("Registration Success!");
-        window.location.href = "http://lecture/pages/login.php";
+        window.location.href = "http://lecture/pages/welcome.php";
     }
 </script>
 <?php
-    
+    session_start();
     require "../php/connect.php";
     
     if(isset($_POST['firstName']) && isset($_POST['lastName']) && isset($_POST['email']) && isset($_POST['username']) && isset($_POST['password'])){
@@ -35,6 +35,7 @@
             if(!$sql->execute()){
                 echo $sql->error;
             }else{
+                $_SESSION['user'] = $username;
                 echo " <script>successfull()</script>";
             }
         }

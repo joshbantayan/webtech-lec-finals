@@ -6,9 +6,13 @@
 <html>
 <head>
 	<title>Welcome</title>
+	<link rel="stylesheet" href="../css/alternate.css">
 </head>
 <body>
-	<p>Hi! <?php echo $session; ?></p>
+
+	<div class="navigation-bar">
+	<p><?php echo $session; ?></p>
+	</div>
 	<a href="../php/logout.php"><input type="button" value="Logout"></a>
 </body>
 </html>
