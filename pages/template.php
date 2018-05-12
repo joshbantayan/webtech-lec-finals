@@ -40,10 +40,6 @@
             </nav>
         </div>
         
-        
-        
-      
-
         <div class="occupy">
             <div class="side_nav"> 
                 <div class="link"><a href="#">Link 1</a></div>
@@ -53,6 +49,10 @@
             </div>
 
             <div class="container">
+
+        <div class="wrapper">
+            
+            <div class="content">
                 <div class="container_title">
                     <h2>Topic Title</h2>
                 </div>
