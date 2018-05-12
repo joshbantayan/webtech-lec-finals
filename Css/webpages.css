@@ -61,18 +61,12 @@
     display: flex;
 }
 
-#container{
-    position: absolute;
-    display: table;
-    height: 100%;
-    width: 100%;
-}
-
-#content {
+.content {
     display: table-cell;
     vertical-align: middle;
     margin: auto;
-    text-align: center;   
+    text-align: center;
+    height: 100%;
 }
 
 #content img {
@@ -137,24 +131,53 @@ body {
     height: 7vh;
 }
 
+
 .wrapper{
     height: 100%;
     width: 100%;
     display: flex;
 }
-.side_bar{
+
+.occupy{
     height: 100%;
-    width: 30vh;
-    background: aquamarine;
-    display: inline-block;
-    float: left;
-}
-.content{
-    background: black;
-    float: right;
-    display: flex;
     width: 100%;
+    position: fixed;
+    display: flex;
+}
+
+.side_nav{
+    background: #F8B195;
+    width: 2vh;
     height: 100%;
+    overflow: hidden;
+}
+
+.side_nav:hover{
+    width: 30vh;
+    animation-delay: 2s;
+}
+
+.link{
+    padding-left: 3vh; 
+    padding-top: 2vh;
+    color: white;
+    font-size: 3vh;
+}
+
+.link a{
+    color: white;
+}
+
+.link a:hover{
+    color: #6C5B7B;
+    text-decoration: none;
+}
+
+#container{
+    position: absolute;
+    display: table;
+    height: 100%;
+    width: 100%;
 }
 
 /* About page css*/
@@ -162,7 +185,9 @@ body {
 .about-container {
     width: 100%;
     border-radius: 20px;
-    background-color: #F8B195;
+    background-color: .link a{
+    color: white;
+}
     text-align: center;
     margin: 20px 20px 20px 20px;
 }
