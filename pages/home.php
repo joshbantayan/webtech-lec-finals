@@ -1,4 +1,6 @@
+
 <!DOCTYPE HTML>
+
 <html>
     <head>
         <Title>Webtech Finals</Title>
@@ -20,6 +22,8 @@
                 <button type="button" class="btn btn-demo" data-toggle="modal" data-target="#myModal2">
                 <img id="icon" src="../Images/logo.2.png"></button>
                 <a class="navbar-brand" href="home.php">HOME</a>
+                <p><?php echo $session; ?></p>
+		<a href="../php/logout.php"><input type="button" value="Logout"></a>
                 <a class="navbar-brand" href="about.php">ABOUT</a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,18 +41,24 @@
                 </div>
             </nav>
         </div>
-         <div class="home-container">
+         <div class="occupy">
             <div class="occupy-home">
-            <div class="side_nav"> 
-                <div class="link"><a href="jsp.php">JSP and Java Servlets</a></div>
-                <div class="link"><a href="ss-scripting.php">Server Side Scripting</a></div>
-                <div class="link"><a href="#">Link 1</a></div>
-                <div class="link"><a href="web-security.php">Web Security</a></div>
+                <div class="side_nav"> 
+                    <div class="link"><a href="jsp.php">JSP and Java Servlets</a></div>
+                    <div class="link"><a href="ss-scripting.php">Server Side Scripting</a></div>
+                    <div class="link"><a href="web-security.php">Web Security</a></div>
+                    <div class="link"><a href="nodeJs.php">Node.js</a></div>
+                    <div class="link"><a href="php.php">PHP</a></div>
+                    
+                </div>
+            </div>
+   
+            <img src="../Images/logo.2.png">
+            <div id = "description">
+                <p>
+                Web Technology is the study of how computers communicate by the means of markup languages and packages. It covers the differrent languages involved in making creative, dynamic and secure websites. </p>
             </div>
         </div>
-   
-        <img src="../Images/logo.2.png" id="home-logo" />
-    </div>
         
     </body>
 </html>

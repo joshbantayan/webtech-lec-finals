@@ -14,6 +14,16 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     </head>
     <body>
+
+<!--
+        <div class="navigation-bar">
+            <a href="home.php"><img href="../Images/Icon2.png"></a>
+            <form action="search.php">
+                <input type="text" placeholder="Search..">
+                <button value="search" class="button2">SEARCH</button>
+            </form>
+        </div>
+-->
         <div class="wrapper">
             <nav class="navbar navbar-expand-lg navigation-bar">
                 <button type="button" class="btn btn-demo" data-toggle="modal" data-target="#myModal2">
@@ -36,19 +46,21 @@
                 </div>
             </nav>
         </div>
-         <div class="occupy">
-            <div class="side_nav"> 
-                <div class="link"><a href="#">Link 1</a></div>
-                <div class="link"><a href="#">Link 1</a></div>
-                <div class="link"><a href="#">Link 1</a></div>
-                <div class="link"><a href="#">Link 1</a></div>
-            </div>
+        
+          <div class="occupy">
+        <div class="side_nav">
+            <div class="link"><a href="ss-scripting.php">Server-Side Scripting Technologies</a></div>
+            <div class="link"><a href="jsp.php">JSP and Java Servlets</a></div>
+            <div class="link"><a href="web-security.php">Web Security</a></div>
+            <div class="link"><a href="nodeJs.php">Node.js</a></div>
+            <div class="link"><a href="php.php">PHP</a></div>
         </div>
+    </div>
         <div class="about-container">
                 <div class="about-title-container">
                     <h2>ABOUT US</h2>
                     <div id="about-border"></div>
-                    <p> The Team</p>
+                    <p> The team</p>
                 </div>
                 <div class="about-content">
                     

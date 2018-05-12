@@ -38,14 +38,15 @@
             </div>
         </nav>
     </div>
-     <div class="occupy">
-            <div class="side_nav"> 
-                <div class="link"><a href="#">Link 1</a></div>
-                <div class="link"><a href="#">Link 1</a></div>
-                <div class="link"><a href="#">Link 1</a></div>
-                <div class="link"><a href="#">Link 1</a></div>
-            </div>
+    <div class="occupy">
+        <div class="side_nav">
+            <div class="link"><a href="ss-scripting.php">Server-Side Scripting Technologies</a></div>
+            <div class="link"><a href="jsp.php">JSP and Java Servlets</a></div>
+            <div class="link"><a href="web-security.php">Web Security</a></div>
+            <div class="link"><a href="nodeJs.php">Node.js</a></div>
+            <div class="link"><a href="php.php">PHP</a></div>
         </div>
+    </div>
     <div class="content-container">
         <div class="content-sub-container">
             <div class="content-sub-title">
@@ -170,7 +171,7 @@
         </div>
     </div>
     <footer>
-        
+
     </footer>
 </body>
 

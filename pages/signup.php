@@ -26,7 +26,7 @@
     function successfull()
     {
         alert("Registration Success!");
-        window.location.href = "http://lecture/pages/welcome.php";
+        window.location.href = "http://lecture/pages/home.php";
     }
 </script>
 

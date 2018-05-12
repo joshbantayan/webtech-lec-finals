@@ -263,11 +263,7 @@ body {
     border-radius: 10px;
     background-color: #fa9d78;
 }
-/* Home page*/
-.home-container{
-
-}
-
+/*Homepage CSS*/
 .occupy-home {
            background-attachment: fixed;
     background-image: url(../Images/BG3.jpg);
@@ -275,4 +271,20 @@ body {
     background-size: 100%;
     margin: 0;
     overflow: hidden;
+}
+
+#description{
+    background-color: #eabba8;
+    font-size: 4vh;
+    width: 60%;
+    text-align: center;
+    padding-top: 20vh;
+}
+
+#description p {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    width: 100%;
+    background-color: #f48153;
 }
