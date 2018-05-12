@@ -47,35 +47,87 @@
             </nav>
         </div>
         
-        <div class="modal left fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title" id="myModalLabel">Left Sidebar</h4>
-				</div>
-
-				<div class="modal-body">
-					<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-					</p>
-				</div>
-
-			</div><!-- modal-content -->
-		</div><!-- modal-dialog -->
-	</div><!-- modal -->
-        
-        <div class="container">
-            <div class="content">
-                <div class="container_title">
-                    <h2>Java Server Pages and Java Servelet</h2>
-                </div>
-                <div class="container_content">
-                    <p class="sub_title"> a keyword</p>
-                    <p> definition</p>
-                </div>
-                <div class="container_content"></div>
-            </div>
+    <div class="content-container">
+        <div class="content-title">
+            <h2> Java Server Pages and Java Servelets</h2>
         </div>
+                <div class="content-sub-container">
+                    <div class="content-sub-title">
+                        <h2> Java Server Pages (JSP)</h2>
+                    </div>
+                    
+                    <div class="content-sub-text">
+                        <p>JavaServer Pages (JSP) technology enables Web developers and designers to rapidly develop and easily maintain, information-rich, dynamic Web pages that leverage existing business systems. As part of the Java technology family, JSP technology enables rapid development of Web-based applications that are platform independent. JSP technology separates the user interface from content generation, enabling designers to change the overall page layout without altering the underlying dynamic content.
+                        </p>
+                    </div>
+                </div>
+                <div class="content-sub-container">
+                    <div class="content-sub-title">
+                        <h2>Java Servlets </h2>
+                    </div>
+                    <div class="content-sub-text">
+                        Java Servlet technology provides Web developers with a simple, consistent mechanism for extending the functionality of a Web server and for accessing existing business systems. A servlet can almost be thought of as an applet that runs on the server side--without a face.
+                    </div>
+                    <div class="content-sub-text">
+                        <b>javax.servlet</b> <br>
+                        <div class="content-mini-text">
+                            <p>The javax.servlet package contains a number of classes and interfaces that describe and define the contracts between a servlet class and the runtime environment provided for an instance of such a class by a conforming servlet container.
+                            Source: Tomcat Apache
+                             </p>
+                        </div>
+                        <b>javax.servlet Interfaces:</b> <br>
+                        Servlet Request <br>
+                        ServletResponse <br>
+                        RequestDispatcher <br>
+                        ServletConfig <br>
+                        ServletContext <br>
+                        SingleThreadModel <br>
+                        Filter <br>
+                        FilterConfig <br>
+                        FilterChain <br>
+                        ServletRequestListener <br>
+                        ServletRequestAttributeListener <br>
+                        ServletContextListener <br>
+                        ServletContextAttributeListener <br> <br>
+                        
+                        <b>javax.servlet Classes</b> <br> 
+                        GenericServlet <br>
+                        ServletInputStream <br>
+                        ServletOutputStream <br>
+                        ServletRequestWrapper <br>
+                        ServletResponseWrapper <br>
+                        ServletRequestEvent <br>
+                        ServletContextEvent <br>
+                        ServletRequestAttributeEvent <br> 
+                        ServletContextAttributeEvent <br>
+                        ServletException <br>
+                        UnavailableException <br> <br>
+                        
+                        <b>javax.servlet.http</b> <br>
+                        <div class="content-mini-text">
+                            <p>The javax.servlet.http package contains a number of classes and interfaces that describe and define the contracts between a servlet class running under the HTTP protocol and the runtime environment provided for an instance of such a class by a conforming servlet container.
+                            Source: tomcat apache
+                             </p>
+                        </div>
+                        <b> javax.servlet.http Interfaces </b> <br>
+                        HttpServletRequest <br>
+                        HttpServletResponse <br>
+                        HttpSession <br>
+                        HttpSessionListener <br>
+                        HttpSessionAttributeListener <br>
+                        HttpSessionBindingListener <br>
+                        HttpSessionActivationListener <br> <br>
+                        
+                        <b>javax.servlet.http Classes</b> <br>
+                        HttpServlet <br>
+                        Cookie <br>
+                        HttpServletRequestWrapper <br>
+                        HttpServletResponseWrapper <br>
+                        HttpSessionEvent <br>
+                        HttpSessionBindingEvent <br>
+                    </div>
+                </div>
+            </div>
+        
     </body>
 </html>
