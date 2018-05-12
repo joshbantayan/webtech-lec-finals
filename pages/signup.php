@@ -1,8 +1,25 @@
 
 <script>
+    function allFields()
+    {
+        alert("All fields must be filled");
+        window.location.href = "http://lecture/pages/signup.php";
+    }
     function passwordValidatef()
     {
         alert("Password does not match");
+        window.location.href = "http://lecture/pages/signup.php";
+    }
+    
+     function usernameTaken()
+    {
+        alert("Username is already taken!");
+        window.location.href = "http://lecture/pages/signup.php";
+    }
+    
+    function emailTaken()
+    {
+        alert("Email is already taken!");
         window.location.href = "http://lecture/pages/signup.php";
     }
     
@@ -12,6 +29,7 @@
         window.location.href = "http://lecture/pages/welcome.php";
     }
 </script>
+
 <?php
     session_start();
     require "../php/connect.php";
@@ -24,22 +42,34 @@
         $password = $_POST['password'];
         $verifyPassword = $_POST['vPassword'];
         $registration = date("Y/m/d");
+        $qry = "SELECT * FROM users";
+        $results = mysqli_query($connection, $qry);
+        $row = mysqli_fetch_array($results, MYSQLI_ASSOC); 
+        $count = mysqli_num_rows($results);
+        $usernameVerify = $row['username'];
+        $emailVerify = $row['email'];
         
-        if($verifyPassword != $password){
-            echo "<script>invalidPassword()</script>";
-        }else{
-            $password = password_hash($password, PASSWORD_DEFAULT);
-            $sql = $connection->prepare("INSERT INTO users (firstname, lastname,email,username,password, registrationdate) VALUES(?,?,?,?,?,NOW())");
-            $sql->bind_param("sssss", $fName, $lName, $email, $username, $password);
+        if($fName == null || $lName == null || $email == null || $username == null || $password == null || $verifyPassword == null){
+            echo "<script>allFields()</script>";
+            } elseif($email  == $emailVerify){
+                echo "<script>emailTaken()</script>";
+            } elseif($username == $usernameVerify){
+                echo "<script>usernameTaken()</script>";
+            }elseif($verifyPassword != $password){
+                echo "<script>invalidPassword()</script>";
+                    }else{
+                    $password = password_hash($password, PASSWORD_DEFAULT);
+                    $sql = $connection->prepare("INSERT INTO users (firstname, lastname,email,username,password, registrationdate) VALUES(?,?,?,?,?,NOW())");
+                    $sql->bind_param("sssss", $fName, $lName, $email, $username, $password);
         
-            if(!$sql->execute()){
-                echo $sql->error;
-            }else{
-                $_SESSION['user'] = $username;
-                echo " <script>successfull()</script>";
-            }
-        }
-    }            
+                        if(!$sql->execute()){
+                            echo $sql->error;
+                        }else{
+                            $_SESSION['user'] = $username;
+                            echo " <script>successfull()</script>";
+                        }
+                }
+    }
    
 
 ?>

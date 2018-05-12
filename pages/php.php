@@ -15,15 +15,6 @@
     </head>
     <body>
 
-<!--
-        <div class="navigation-bar">
-            <a href="home.php"><img href="../Images/Icon2.png"></a>
-            <form action="search.php">
-                <input type="text" placeholder="Search..">
-                <button value="search" class="button2">SEARCH</button>
-            </form>
-        </div>
--->
         <div class="wrapper">
             <nav class="navbar navbar-expand-lg navigation-bar">
                 <button type="button" class="btn btn-demo" data-toggle="modal" data-target="#myModal2">
@@ -39,15 +30,25 @@
                     <ul class="navbar-nav mr-auto">
 
                     </ul>
-                    <form action="../php/search.php" class="form-inline my-2 my-lg-0" method="post">
+                    <!-- <form action="../php/search.php" class="form-inline my-2 my-lg-0" method="post">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" name="search" aria-label="Search">
                     <button class="button" type="submit">Search</button>
-                    </form>
+                    </form> -->
+                    <div>
+                        <input type="text" name="search" id="search" placeholder="Search">
+                        <div id="result"></div>
+                    <div>
                 </div>
             </nav>
         </div>
-
-        
+         <div class="occupy">
+            <div class="side_nav"> 
+                <div class="link"><a href="#">Link 1</a></div>
+                <div class="link"><a href="#">Link 1</a></div>
+                <div class="link"><a href="#">Link 1</a></div>
+                <div class="link"><a href="#">Link 1</a></div>
+            </div>
+        </div>
         <div class="container">
             <div class="content">
                 <div class="container_title">

@@ -14,16 +14,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     </head>
     <body>
-
-<!--
-        <div class="navigation-bar">
-            <a href="home.php"><img href="../Images/Icon2.png"></a>
-            <form action="search.php">
-                <input type="text" placeholder="Search..">
-                <button value="search" class="button2">SEARCH</button>
-            </form>
-        </div>
--->
         <div class="wrapper">
             <nav class="navbar navbar-expand-lg navigation-bar">
                 <button type="button" class="btn btn-demo" data-toggle="modal" data-target="#myModal2">
@@ -39,23 +29,66 @@
                     <ul class="navbar-nav mr-auto">
 
                     </ul>
-                    <form action="../php/search.php" class="form-inline my-2 my-lg-0" method="post">
+                    <!-- <form action="../php/search.php" class="form-inline my-2 my-lg-0" method="post">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" name="search" aria-label="Search">
                     <button class="button" type="submit">Search</button>
-                    </form>
+                    </form> -->
+                    <div>
+                        <input type="text" name="search" id="search" placeholder="Search">
+                        <div id="result"></div>
+                    <div>
                 </div>
             </nav>
         </div>
-        
-      
-        
-        <div class="container">
-            <div class="content">
-                <div class="container_title">
-                    <h2>node.js</h2>
-                </div>
-                <div class="container_content"></div>
+         <div class="occupy">
+            <div class="side_nav"> 
+                <div class="link"><a href="#">Link 1</a></div>
+                <div class="link"><a href="#">Link 1</a></div>
+                <div class="link"><a href="#">Link 1</a></div>
+                <div class="link"><a href="#">Link 1</a></div>
             </div>
         </div>
+      <div class="content-container">
+        <div class="content-sub-container">
+          <div class="content-sub-title">
+                <h2> Node.js </h2>
+            </div>
+            
+            <div class="content-sub-text">
+                <p>Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world. <br> -Nodejs.org</p>
+            </div>
+          </div>  
+          
+          <div class="content-sub-container">
+          <div class="content-sub-title">
+                <h2> Node.js History </h2>
+            </div>
+            
+            <div class="content-sub-text">
+                <p>Node.js was originally written by Ryan Dahl in 2009. The initial release supported only Linux and Mac OSX, but its development and maintenance was later led by Ryan Dahl himself and sponsored by Joyent.Node.js is a runtime system used for creating mostly server-side applications. Eventually becoming popular, Node.js is now used by programmers to create APIs and build new matrices of interoperability across the Internet.</p>
+            </div>
+          </div>  
+      </div>
     </body>
 </html>
+
+<script>
+    $(document).ready(function(){
+        $('#search').keyup(function(){
+            var text = $(this).val();
+            if(text != ''){
+                $.ajax({
+                url: "../php/search.php",
+                method: "post",
+                data: {search:text},
+                dataType: "text",
+                success: function(data){
+                        $('#result').html(data);
+                    }
+                });
+            } else {
+                $('#result').html('');
+            }
+        })
+    });
+</script>

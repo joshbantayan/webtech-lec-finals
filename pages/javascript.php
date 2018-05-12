@@ -30,25 +30,45 @@
                     <ul class="navbar-nav mr-auto">
 
                     </ul>
-                    <form action="../php/search.php" class="form-inline my-2 my-lg-0" method="post">
+                    <!-- <form action="../php/search.php" class="form-inline my-2 my-lg-0" method="post">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" name="search" aria-label="Search">
                     <button class="button" type="submit">Search</button>
-                    </form>
+                    </form> -->
+                    <div>
+                        <input type="text" name="search" id="search" placeholder="Search">
+                        <div id="result"></div>
+                    <div>
                 </div>
             </nav>
         </div>
-        
-        <div class="container">
-            <div class="content">
-                <div class="container_title">
-                    <h2>JavaScript</h2>
-                </div>
-                <div class="container_content">
-                    <p class="sub_title"> a keyword</p>
-                    <p> definition</p>
-                </div>
-                <div class="container_content"></div>
+      <div class="occupy">
+            <div class="side_nav"> 
+                <div class="link"><a href="#">Link 1</a></div>
+                <div class="link"><a href="#">Link 1</a></div>
+                <div class="link"><a href="#">Link 1</a></div>
+                <div class="link"><a href="#">Link 1</a></div>
             </div>
         </div>
     </body>
 </html>
+
+<script>
+    $(document).ready(function(){
+        $('#search').keyup(function(){
+            var text = $(this).val();
+            if(text != ''){
+                $.ajax({
+                url: "../php/search.php",
+                method: "post",
+                data: {search:text},
+                dataType: "text",
+                success: function(data){
+                        $('#result').html(data);
+                    }
+                });
+            } else {
+                $('#result').html('');
+            }
+        })
+    });
+</script>
