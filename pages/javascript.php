@@ -37,17 +37,12 @@
                 </div>
             </nav>
         </div>
-        
-        <div class="container">
-            <div class="content">
-                <div class="container_title">
-                    <h2>JavaScript</h2>
-                </div>
-                <div class="container_content">
-                    <p class="sub_title"> a keyword</p>
-                    <p> definition</p>
-                </div>
-                <div class="container_content"></div>
+      <div class="occupy">
+            <div class="side_nav"> 
+                <div class="link"><a href="#">Link 1</a></div>
+                <div class="link"><a href="#">Link 1</a></div>
+                <div class="link"><a href="#">Link 1</a></div>
+                <div class="link"><a href="#">Link 1</a></div>
             </div>
         </div>
     </body>

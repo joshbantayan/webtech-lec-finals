@@ -38,6 +38,14 @@
             </div>
         </nav>
     </div>
+     <div class="occupy">
+            <div class="side_nav"> 
+                <div class="link"><a href="#">Link 1</a></div>
+                <div class="link"><a href="#">Link 1</a></div>
+                <div class="link"><a href="#">Link 1</a></div>
+                <div class="link"><a href="#">Link 1</a></div>
+            </div>
+        </div>
     <div class="content-container">
         <div class="content-sub-container">
             <div class="content-sub-title">

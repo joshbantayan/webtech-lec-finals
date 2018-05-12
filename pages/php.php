@@ -15,15 +15,6 @@
     </head>
     <body>
 
-<!--
-        <div class="navigation-bar">
-            <a href="home.php"><img href="../Images/Icon2.png"></a>
-            <form action="search.php">
-                <input type="text" placeholder="Search..">
-                <button value="search" class="button2">SEARCH</button>
-            </form>
-        </div>
--->
         <div class="wrapper">
             <nav class="navbar navbar-expand-lg navigation-bar">
                 <button type="button" class="btn btn-demo" data-toggle="modal" data-target="#myModal2">
@@ -46,8 +37,14 @@
                 </div>
             </nav>
         </div>
-
-        
+         <div class="occupy">
+            <div class="side_nav"> 
+                <div class="link"><a href="#">Link 1</a></div>
+                <div class="link"><a href="#">Link 1</a></div>
+                <div class="link"><a href="#">Link 1</a></div>
+                <div class="link"><a href="#">Link 1</a></div>
+            </div>
+        </div>
         <div class="container">
             <div class="content">
                 <div class="container_title">

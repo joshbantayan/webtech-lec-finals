@@ -14,16 +14,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     </head>
     <body>
-
-<!--
-        <div class="navigation-bar">
-            <a href="home.php"><img href="../Images/Icon2.png"></a>
-            <form action="search.php">
-                <input type="text" placeholder="Search..">
-                <button value="search" class="button2">SEARCH</button>
-            </form>
-        </div>
--->
         <div class="wrapper">
             <nav class="navbar navbar-expand-lg navigation-bar">
                 <button type="button" class="btn btn-demo" data-toggle="modal" data-target="#myModal2">
@@ -46,11 +36,19 @@
                 </div>
             </nav>
         </div>
+         <div class="occupy">
+            <div class="side_nav"> 
+                <div class="link"><a href="#">Link 1</a></div>
+                <div class="link"><a href="#">Link 1</a></div>
+                <div class="link"><a href="#">Link 1</a></div>
+                <div class="link"><a href="#">Link 1</a></div>
+            </div>
+        </div>
         <div class="about-container">
                 <div class="about-title-container">
                     <h2>ABOUT US</h2>
                     <div id="about-border"></div>
-                    <p> About the website and the team</p>
+                    <p> The Team</p>
                 </div>
                 <div class="about-content">
                     
@@ -65,7 +63,7 @@
                     
                     <div class="member-container">
                             <div class="member-img">
-                                <img src="" alt="" class="mem-photo" />
+                                <img src="../Images/eden.png" alt="" class="mem-photo" />
                             </div>
                             <div class="member-desc">
                                 <h2> Eden Carlo Brabante</h2>
