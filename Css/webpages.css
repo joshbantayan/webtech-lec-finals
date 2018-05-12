@@ -58,7 +58,7 @@
 }
 
 .wrapper{
-    display: flex;
+height: 500px;
 }
 
 #container{
@@ -69,10 +69,7 @@
 }
 
 #content {
-    display: table-cell;
-    vertical-align: middle;
-    margin: auto;
-    text-align: center;   
+ 
 }
 
 #content img {
@@ -158,8 +155,11 @@ body {
 }
 
 /* About page css*/
-
 .about-container {
+    margin: 0 auto;
+    width: 80%;
+}
+.about-title-container {
     width: 100%;
     border-radius: 20px;
     background-color: #F8B195;
@@ -194,4 +194,35 @@ body {
     height: 200px;
     border-radius: 50%;
     border: 2px solid black;
+}
+
+#about-border {
+    margin: 0 auto;
+    width: 50%;
+    border: 2px solid white;
+}
+
+.content-container {
+    width: 90%;
+    margin: 0 auto;
+}
+.content-sub-title {
+    color: white;
+    text-shadow: 2px 2px #393737;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #d0a18e;
+}
+
+.content-sub-text {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 90%;
+    margin: 0 auto;
+}
+.content-sub-container {
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #fa9d78;
 }

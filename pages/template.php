@@ -49,10 +49,7 @@
         </div>
         
         
-        
-        
-        <div class="wrapper">
-            <div class="side_bar">
+        <div class="side_bar">
             <div class="menu">Topic 1</div>
             <div class="menu">Topic 2</div>
             <div class="menu">Topic 3</div>
@@ -60,6 +57,9 @@
             <div class="menu">Topic 5</div>
             <div class="menu">Topic 6</div>
         </div>
+        
+        <div class="wrapper">
+            
             <div class="content">
                 <div class="container_title">
                     <h2>Topic Title</h2>
