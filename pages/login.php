@@ -38,33 +38,6 @@
         }
 
 ?>
-<!-- 
- <?php
-    if(isset($_POST['username']) && isset($_POST['password']) && isset($_POST['loginB'])){
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    /*$pass = sha1($password);*/
-    $stmt = mysqli_fetch_assoc(mysqli_query($connection, "SELECT username, password FROM users WHERE username = '$username'"));
-    $uname = $stmt['username'];
-    $pass = $stmt['password'];/*
-    $pa = sha1($stmt['password']);*/
-                          
-    if($username == $uname && $password == $pass){
-    $res = mysqli_query($connection, "SELECT username, and password FROM users WHERE username = '$username' and '$password'");
-        while($row = mysqli_fetch_row($res)){
-            $uname = $row[0];
-            header("Location: ../index.php");
-        }
-                            
-        echo "error";
-    }else {
-        echo "incorrect username or password";
-        }
-
-    }
-
-?> -->
-
 
 <!DOCTYPE HTML>
 <html>
