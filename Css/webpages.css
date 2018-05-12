@@ -198,10 +198,9 @@ body {
 .about-title-container {
     width: 100%;
     border-radius: 20px;
-    background-color: .link a{
-    color: white;
-}
+    background-color: #f56e39;
     text-align: center;
+    color: wheat;
     margin: 20px 20px 20px 20px;
 }
 

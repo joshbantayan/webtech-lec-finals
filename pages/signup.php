@@ -1,5 +1,10 @@
 
 <script>
+    function allFields()
+    {
+        alert("All fields must be filled");
+        window.location.href = "http://lecture/pages/signup.php";
+    }
     function passwordValidatef()
     {
         alert("Password does not match");
@@ -44,13 +49,15 @@
         $usernameVerify = $row['username'];
         $emailVerify = $row['email'];
         
-        if($verifyPassword != $password){
-            echo "<script>invalidPassword()</script>";
+        if($fName == null || $lName == null || $email == null || $username == null || $password == null || $verifyPassword == null){
+            echo "<script>allFields()</script>";
             } elseif($email  == $emailVerify){
                 echo "<script>emailTaken()</script>";
             } elseif($username == $usernameVerify){
                 echo "<script>usernameTaken()</script>";
-                }else{
+            }elseif($verifyPassword != $password){
+                echo "<script>invalidPassword()</script>";
+                    }else{
                     $password = password_hash($password, PASSWORD_DEFAULT);
                     $sql = $connection->prepare("INSERT INTO users (firstname, lastname,email,username,password, registrationdate) VALUES(?,?,?,?,?,NOW())");
                     $sql->bind_param("sssss", $fName, $lName, $email, $username, $password);
