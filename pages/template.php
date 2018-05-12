@@ -10,25 +10,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="../script/sidebar.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     </head>
     <body>
 
-<!--
-        <div class="navigation-bar">
-            <a href="home.php"><img href="../Images/Icon2.png"></a>
-            <form action="search.php">
-                <input type="text" placeholder="Search..">
-                <button value="search" class="button2">SEARCH</button>
-            </form>
-        </div>
--->
-        
+
         <div class="wrapper">
             <nav class="navbar navbar-expand-lg navigation-bar">
-                <button type="button" class="btn btn-demo" data-toggle="modal" data-target="#myModal2">
-                <img id="icon" src="../Images/logo.2.png"></button>
+            
+                <img id="icon" src="../Images/logo.2.png">
                 <a class="navbar-brand" href="home.php">HOME</a>
                 <a class="navbar-brand" href="about.php">ABOUT</a>
 
@@ -41,23 +33,23 @@
 
                     </ul>
                     <form action="../php/search.php" class="form-inline my-2 my-lg-0" method="post">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" name="search" aria-label="Search">
+                        <input class=" mr-sm-2" type="search" placeholder="Search" name="search" aria-label="Search">
                     <button class="button" type="submit">Search</button>
                     </form>
                 </div>
             </nav>
         </div>
         
-        
-        <div class="side_bar">
-            <div class="menu">Topic 1</div>
-            <div class="menu">Topic 2</div>
-            <div class="menu">Topic 3</div>
-            <div class="menu">Topic 4</div>
-            <div class="menu">Topic 5</div>
-            <div class="menu">Topic 6</div>
-        </div>
-        
+        <div class="occupy">
+            <div class="side_nav"> 
+                <div class="link"><a href="#">Link 1</a></div>
+                <div class="link"><a href="#">Link 1</a></div>
+                <div class="link"><a href="#">Link 1</a></div>
+                <div class="link"><a href="#">Link 1</a></div>
+            </div>
+
+            <div class="container">
+
         <div class="wrapper">
             
             <div class="content">
