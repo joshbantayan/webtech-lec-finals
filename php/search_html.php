@@ -30,6 +30,6 @@
             } else {
                 $('#result').html('');
             }
-        });
+        })
     });
 </script>

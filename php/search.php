@@ -1,6 +1,5 @@
 <?php
     require "connect.php";
-    require "";
 
     $output = '';
 
