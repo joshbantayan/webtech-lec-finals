@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-
+.container {
+    height: 100%;
+}
 .navigation-bar {
     background-color: RGBA(248,177,149,0.4);
     padding: 2vh;
@@ -121,7 +123,6 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     margin: 0;
-    overflow: hidden;
 }
 
 #icon{
@@ -195,3 +196,41 @@ body {
 		background-color: #FAFAFA;
 	}
 
+/* About page css*/
+
+.about-container {
+    width: 100%;
+    border-radius: 20px;
+    background-color: #F8B195;
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+}
+
+.about-content {
+    text-align: center;
+}
+
+.member-container {
+    margin: 20px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #f4c2af;
+}
+
+.member-desc {
+    border-radius: 10px;
+    border: 2px solid white;
+    text-shadow: 2px 2px #393737;
+    color: white;
+    width: 100%;
+    background-color: #f5c8b6;
+    padding: 10px;
+}
+
+.mem-photo {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid black;
+}

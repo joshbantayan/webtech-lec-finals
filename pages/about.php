@@ -67,14 +67,15 @@
         
         <div class="container">
             <div class="content">
-                <div class="container_title">
+                <div class="about-container">
                     <h2>About Us</h2>
+                    <p> About the website and the team</p>
                 </div>
-                <div class="container_content">
+                <div class="about-content">
                     
                         <div class="member-container">
                             <div class="member-img">
-                                <img src="" alt="" />
+                                <img src="" alt="" class="mem-photo" />
                             </div>
                             <div class="member-desc">
                                 <h2> Joshua John Bantayan</h2>
@@ -83,7 +84,7 @@
                     
                     <div class="member-container">
                             <div class="member-img">
-                                <img src="" alt="" />
+                                <img src="" alt="" class="mem-photo" />
                             </div>
                             <div class="member-desc">
                                 <h2> Eden Carlo Brabante</h2>
@@ -92,7 +93,7 @@
                     
                     <div class="member-container">
                             <div class="member-img">
-                                <img src="" alt="" />
+                                <img src="../Images/noriel.png" alt="" class="mem-photo" />
                             </div>
                             <div class="member-desc">
                                 <h2> Noriel Jon Navarro </h2>
@@ -101,7 +102,7 @@
                     
                     <div class="member-container">
                             <div class="member-img">
-                                <img src="" alt="" />
+                                <img src="../Images/nikki.jpg" alt="" class="mem-photo" />
                             </div>
                             <div class="member-desc">
                                 <h2> Jisselle Nicole Marinas </h2>
@@ -110,7 +111,7 @@
                     
                     <div class="member-container">
                             <div class="member-img">
-                                <img src="" alt="" />
+                                <img src="" alt="" class="mem-photo" />
                             </div>
                             <div class="member-desc">
                                 <h2> Keilly Ruth Panis</h2>
@@ -119,7 +120,7 @@
                     
                     <div class="member-container">
                             <div class="member-img">
-                                <img src="" alt="" />
+                                <img src="../Images/chasey.jpg" alt="" class="mem-photo" />
                             </div>
                             <div class="member-desc">
                                 <h2> Chaserylle Know-Well Sison</h2>
