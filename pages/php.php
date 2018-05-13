@@ -90,7 +90,7 @@
 
             <div class="content-sub-text">
                 <p>
-          Released in the year 1998, was the first widely used version of PHP.
+          Released in June 6, 1998, was the first widely used version of PHP. An API was designed and implemented. There was a change from a single developer to multiple developers, and the name was changed from PHP/FI to PHP: HyperText Preprocessor.
                 </p>
             </div>
         </div>
@@ -102,10 +102,52 @@
 
             <div class="content-sub-text">
                 <p>
-          Released in May of 2000 with its new core, Zend Engine 1.0 and was faster and more reliable than its previous version.
+         Released in May 22, 2000 with its new core, Zend Engine 1.0 and was faster and more reliable than its previous version. It featured better run-time performance and a new paradigm, “Compile first, Execute later”.
                 </p>
             </div>
         </div>
+            <div class="content-sub-container">
+            <div class="content-sub-title">
+                <h2>PHP 5 </h2>
+            </div>
+
+            <div class="content-sub-text">
+                <p>
+         Released in July 13,  2004 with the updated core, Zend Engine 2.0. In this version of PHP, new features were added and some old features were removed, like multiple inheritance and namespaces. It’s XML functionality was also rewritten to equal other web technologies.
+                </p>
+            </div>
+        </div>
+            
+            <div class="content-sub-container">
+            <div class="content-sub-title">
+                <h2>PHP 7 </h2>
+            </div>
+
+            <div class="content-sub-text">
+                <p>
+         Released in December 3, 2015. It featured better error handling, scalar type declarations, return type declarations, null coalescing operator, anonymous classes, and removed all deprecated features. It is also twice as fast as PHP 5.6.
+                </p>
+            </div>
+        </div>
+            
+               <div class="content-sub-container">
+            <div class="content-sub-title">
+                <h2>PHP Frameworks </h2>
+            </div>
+
+            <div class="content-sub-text">
+                 <ol>
+                <li> Symfony</li>
+                    <li>CodeIgniter</li>
+                     <li>YII 2</li>
+                     <li> Phalcon</li>
+                     <li> CakePHP</li>
+                     <li> Zend Framework</li>
+                     <li> FuelPHP</li>
+                     <li>Laravel</li>
+                </ol>
+            </div>
+    </div>
     </div>
         
     <div class="footer"><br/> Web Systems and Technologies 2018 - 9331A Group 4 </div>
