@@ -60,7 +60,6 @@
                 Web Technology is the study of how computers communicate by the means of markup languages and packages. It covers the differrent languages involved in making creative, dynamic and secure websites. </p>
             </div>
         </div>
-            
     </body>
 </html>
 

@@ -176,9 +176,7 @@
             </div>
         </div>
     </div>
-    <footer>
-
-    </footer>
+    <div class="footer"><br/> Web Systems and Technologies 2018 - 9331A Group 4 </div>
 </body>
 
 </html>

@@ -160,6 +160,7 @@ body {
     height: 100%;
     overflow: hidden;
     -webkit-transition:  width 0.7s;
+    position: fixed;
 }
 
 .side_nav:hover{
@@ -299,4 +300,13 @@ body {
     display: block;
     background-color: #F8B195;
     border-radius: 20px;
+}
+
+.footer{
+    text-align: center;
+    float: center;
+    color: white;
+    background: #ccc3d5;
+    height: 10vh;
+    width: 100%;
 }
