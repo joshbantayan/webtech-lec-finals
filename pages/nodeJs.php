@@ -29,15 +29,21 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-
                 </ul>
-                <form action="../php/search.php" class="form-inline my-2 my-lg-0" method="post">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" name="search" aria-label="Search">
+                    <!-- <form action="../php/search.php" class="form-inline my-2 my-lg-0" method="post">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" name="search" aria-label="Search">
                     <button class="button" type="submit">Search</button>
-                </form>
+                    </form> -->
+                    <div>
+                        <input type="text" name="search" id="search" placeholder="Search">
+                        <div id="result"></div>
+                    <div>
+                </div>
+                </div>
             </div>
-        </nav>
-    </div>
+            </nav>
+        </div>
+        
     <div class="occupy">
         <div class="side_nav">
             <div class="link"><a href="ss-scripting.php">Server-Side Scripting Technologies</a></div>
@@ -71,3 +77,26 @@
 </body>
 
 </html>
+=======
+
+<script>
+    $(document).ready(function(){
+        $('#search').keyup(function(){
+            var text = $(this).val();
+            if(text != ''){
+                $.ajax({
+                url: "../php/search.php",
+                method: "post",
+                data: {search:text},
+                dataType: "text",
+                success: function(data){
+                        $('#result').html(data);
+                    }
+                });
+            } else {
+                $('#result').html('');
+            }
+        })
+    });
+</script>
+>>>>>>> effa93639ff2ef5e49c44238c73bb568d9d8efe7

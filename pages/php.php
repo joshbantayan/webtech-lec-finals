@@ -28,15 +28,13 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-
-                </ul>
-                <form action="../php/search.php" class="form-inline my-2 my-lg-0" method="post">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" name="search" aria-label="Search">
-                    <button class="button" type="submit">Search</button>
-                </form>
-            </div>
+        
+                    <div>
+                        <input type="text" name="search" id="search" placeholder="Search">
+                        <div id="result"></div>
+                    <div>
+                </div>
+        </div>
         </nav>
     </div>
     <div class="occupy">
@@ -71,7 +69,7 @@
           Lerdorf combined PHP with his Form Interpreter and released it in June 8, 1995 as PHP/FI.
                 </p>
             </div>
-        </div>
+
         
          <div class="content-sub-container">
             <div class="content-sub-title">
@@ -110,5 +108,4 @@
         </div>
     </div>
 </body>
-
 </html>
