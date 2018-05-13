@@ -96,3 +96,24 @@
 </body>
 
 </html>
+
+<script>
+    $(document).ready(function(){
+        $('#search').keyup(function(){
+            var text = $(this).val();
+            if(text != ''){
+                $.ajax({
+                url: "../php/search.php",
+                method: "post",
+                data: {search:text},
+                dataType: "text",
+                success: function(data){
+                        $('#result').html(data);
+                    }
+                });
+            } else {
+                $('#result').html('');
+            }
+        })
+    });
+</script>

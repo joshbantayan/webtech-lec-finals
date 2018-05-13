@@ -17,37 +17,42 @@
 
 <body>
 
-    <div class="wrapper">
-        <nav class="navbar navbar-expand-lg navigation-bar">
-            <button type="button" class="btn btn-demo" data-toggle="modal" data-target="#myModal2">
+       <div class="wrapper">
+            <nav class="navbar navbar-expand-lg navigation-bar">
+                <button type="button" class="btn btn-demo" data-toggle="modal" data-target="#myModal2">
                 <img id="icon" src="../Images/logo.2.png"></button>
-            <a class="navbar-brand" href="home.php">HOME</a>
-            <a class="navbar-brand" href="about.php">ABOUT</a>
+                <a class="navbar-brand" href="home.php">HOME</a>
+                <a class="navbar-brand" href="about.php">ABOUT</a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    here
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
 
+                    </ul>
                     <!-- <form action="../php/search.php" class="form-inline my-2 my-lg-0" method="post">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" name="search" aria-label="Search">
                     <button class="button" type="submit">Search</button>
                     </form> -->
-                    <div>
                         <input type="text" name="search" id="search" placeholder="Search">
                         <div id="result"></div>
-        </div>
-    </div>
 
-    <div class="occupy">
-        <div class="side_nav">
-            <div class="link"><a href="#">Link 1</a></div>
-            <div class="link"><a href="#">Link 1</a></div>
-            <div class="link"><a href="#">Link 1</a></div>
-            <div class="link"><a href="#">Link 1</a></div>
+                </div>
+            </nav>
         </div>
-    </div>
+         <div class="occupy">
+                <div class="side_nav"> 
+                    <div class="link"><a href="jsp.php">JSP and Java Servlets</a></div>
+                    <div class="link"><a href="ss-scripting.php">Server Side Scripting</a></div>
+                    <div class="link"><a href="web-security.php">Web Security</a></div>
+                    <div class="link"><a href="nodeJs.php">Node.js</a></div>
+                    <div class="link"><a href="php.php">PHP</a></div>
+                    <div class="link"><a href="web-security.php">Web Security</a></div>
+                </div>
+            </div>
     <div class="content-container">
         <div class="content-title">
             <h2> Java Server Pages and Java Servelets</h2>
@@ -88,15 +93,8 @@
 
                 <b>javax.servlet.http Classes</b> <br> HttpServlet <br> Cookie <br> HttpServletRequestWrapper <br> HttpServletResponseWrapper <br> HttpSessionEvent <br> HttpSessionBindingEvent <br>
             </div>
-<<<<<<< HEAD
-        </div>
     </div>
-
-</body>
-
-</html>
-=======
-        
+            </div>
     </body>
 </html>
 
@@ -120,4 +118,3 @@
         })
     });
 </script>
->>>>>>> effa93639ff2ef5e49c44238c73bb568d9d8efe7

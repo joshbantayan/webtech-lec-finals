@@ -77,7 +77,6 @@
 </body>
 
 </html>
-=======
 
 <script>
     $(document).ready(function(){
@@ -99,4 +98,3 @@
         })
     });
 </script>
->>>>>>> effa93639ff2ef5e49c44238c73bb568d9d8efe7
