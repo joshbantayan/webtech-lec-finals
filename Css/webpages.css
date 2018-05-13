@@ -292,14 +292,39 @@ body {
 
 /*search bar*/
 
-#search {
+#search{
+    width: 26vh;
+    float: right;
     display: block;
 }
-#result {
+
+#result{
     color: white;
     display: block;
+    margin-top: 4vh;
+    width: 26vh;
+   
+}
+
+#content-container{
+    display: block;
+    position: absolute;
+    z-index: 100;
+    width: 26vh;
     background-color: #F8B195;
-    border-radius: 20px;
+}
+
+#content-container a{
+    text-decoration: none;
+}
+
+#content-container p{
+    padding: 1vh;
+    margin-bottom: 0.5vh;
+}
+
+.wrapper input{
+    width: 26vh;
 }
 
 .footer{

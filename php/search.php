@@ -6,7 +6,8 @@
     if(isset($_POST['search'])){
         $search = mysqli_real_escape_string($connection, $_POST['search']);
     }
-    $statement = "SELECT * FROM notes WHERE title = '$search'";
+
+    $statement = "SELECT * FROM notes WHERE title LIKE '%$search%'";
 
     $result = mysqli_query($connection, $statement);
 
@@ -19,7 +20,7 @@
             $link = $row['link'];
 
             echo "<div id='content-container'>";
-            echo "<a href=$link><h4>$title</h4></a>";
+            echo "<a href=$link><p>$title</p></a>";
             echo "<p>$content</p>";
         }
     }
