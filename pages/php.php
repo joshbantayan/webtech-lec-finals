@@ -27,12 +27,21 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
 
-        
+                    </ul>
+                    <!-- <form action="../php/search.php" class="form-inline my-2 my-lg-0" method="post">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" name="search" aria-label="Search">
+                    <button class="button" type="submit">Search</button>
+                    </form> -->
                     <div>
                         <input type="text" name="search" id="search" placeholder="Search">
                         <div id="result"></div>
                     <div>
+                </div>
+                    </div>
+                </div>
                 </div>
         </div>
         </nav>
@@ -153,3 +162,24 @@
     <div class="footer"><br/> Web Systems and Technologies 2018 - 9331A Group 4 </div>
 </body>
 </html>
+
+<script>
+    $(document).ready(function(){
+        $('#search').keyup(function(){
+            var text = $(this).val();
+            if(text != ''){
+                $.ajax({
+                url: "../php/search.php",
+                method: "post",
+                data: {search:text},
+                dataType: "text",
+                success: function(data){
+                        $('#result').html(data);
+                    }
+                });
+            } else {
+                $('#result').html('');
+            }
+        })
+    });
+</script>

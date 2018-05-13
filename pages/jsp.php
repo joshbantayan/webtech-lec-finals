@@ -37,9 +37,12 @@
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" name="search" aria-label="Search">
                     <button class="button" type="submit">Search</button>
                     </form> -->
+                    <div>
                         <input type="text" name="search" id="search" placeholder="Search">
                         <div id="result"></div>
-
+                    <div>
+                </div>
+                    </div>
                 </div>
             </nav>
         </div>
