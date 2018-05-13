@@ -57,9 +57,6 @@
                 </div>
             </div>
     <div class="content-container">
-        <div class="content-title">
-            <h2> Java Server Pages and Java Servelets</h2>
-        </div>
         <div class="content-sub-container">
             <div class="content-sub-title">
                 <h2> Java Server Pages (JSP)</h2>

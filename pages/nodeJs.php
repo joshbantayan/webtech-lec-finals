@@ -73,6 +73,15 @@
                 <p>Node.js was originally written by Ryan Dahl in 2009. The initial release supported only Linux and Mac OSX, but its development and maintenance was later led by Ryan Dahl himself and sponsored by Joyent.Node.js is a runtime system used for creating mostly server-side applications. Eventually becoming popular, Node.js is now used by programmers to create APIs and build new matrices of interoperability across the Internet.</p>
             </div>
         </div>
+        <div class="content-sub-container">
+            <div class="content-sub-title">
+                <h2> Express.js </h2>
+            </div>
+
+            <div class="content-sub-text">
+                <p>Express.js or simply Express, is a flexible, fast, and minimalistic Node.js framework that is written in JavaScript and provides a powerful set of features for developing web and mobile applications. Express allows set up middlewares to respond to HTTP Requests, routing table for performing different actions based on the HTTP Methods and URLs, renders HTML pages dynamically based on passing arguments to templates. It supports the Model-View-Controller architecture, that allows you to build websites in a model-driven format.</p>
+            </div>
+        </div>
     </div>
     <div class="footer"><br/> Web Systems and Technologies 2018 - 9331A Group 4 </div>
 </body>

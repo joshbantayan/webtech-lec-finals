@@ -25,6 +25,7 @@
 }
 
 .button {
+    cursor: pointer;
     border: 2px solid white;
     border-radius: 4vh;
     background-color: transparent;
@@ -33,14 +34,17 @@
 }
 
 .button:hover {
+    cursor: pointer;
     transform: scale(1.1);
 }
 
 .button:focus {
+    cursor: pointer;
     outline: 0;
 }
 
 .button2 {
+    cursor: pointer;
     border: 2px solid rgba(248, 177, 149);
     border-radius: 4vh;
     background-color: transparent;
@@ -50,10 +54,12 @@
 }
 
 .button2:hover {
+    cursor: pointer;
     transform: scale(1.1);
 }
 
 .button2:focus {
+    cursor: pointer;
     outline: 0;
 }
 
